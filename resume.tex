@@ -1,0 +1,109 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+
+%
+% Creator Peilin Li
+% Contact me via twitter/wechat: @pe1l1nl1
+% linkedin.com/peill and/or github/ppeill
+% Inspired by Peppa Pig
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.40in,top=0.3in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{enumitem} % lets us tighten list spacing globally to help fit one page
+\setlist{nosep,leftmargin=1.1em} % remove extra spacing between bullet items
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Do Thanh Long - Resume},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{times}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Do Thanh Long} % Your name
+
+\address{\faLinkedin { \href{https://www.linkedin.com/in/dothanhlong}{linkedin.com/in/dothanhlong}} \faEnvelope{ dothanhlongit@gmail.com} \faPhone(+84) 987-398-281\faMapMarker{ HCMC, Vietnam} }
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Ho Chi Minh City University of Technology} \hfill {\em 2015 -- 2019}
+\\{ \textit {B.Eng. in Computer Science}}
+
+\end{rSection}
+
+\begin{rSection}{Skills}
+\begin{tabular}{@{}p{0.20\textwidth}p{0.75\textwidth}@{}}
+Languages: & Java, Python, JavaScript/TypeScript \\
+Backend: & Spring Boot, Microservices, Backbase, REST APIs, Kafka, PostgreSQL, MySQL, Redis, DynamoDB \\
+Cloud \& Infra: & AWS, Kubernetes, OpenShift, Docker \\
+Frontend \& Tools: & Vue.js, Angular, Agile/Scrum, Jira, Confluence
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+\href{https://techcombank.com/}{\textbf{Techcombank}} \hfill {\em Sep 2022 -- Present} \\
+\textit{Senior Software Engineer} (Java, Spring Boot, Microservices, Backbase, SQL/NoSQL, Kubernetes, AWS, Vue.js, Karate) \\
+Backend engineer on the digital banking platform serving \textbf{13M+} retail e-banking customers.
+\begin{itemize}
+    \item \textbf{Customer Loyalty} — reward-point redemption on Techcombank OneU, driving customer engagement and retention.
+    \item \textbf{SME Merchant Payments} — in-bank settlement via T24 core banking and outbound NAPAS ACH transfers (clearing, settlement, failure handling).
+    \item \textbf{Unsecured Lending} — digital lending for credit cards, overdraft (MyCash), and personal installment loans on mobile banking.
+    \item \textbf{T-Shop} — retail-management platform for household businesses and SME customers.
+    \item Owned services end-to-end: design, implementation, unit/integration/contract/API tests, and production incident response.
+\end{itemize}
+
+\href{https://morsoftware.com/}{\bf MOR} \hfill {\em Jan 2021 -- Aug 2022} \\
+\textit{Software Engineer} (Java, Spring Boot, PostgreSQL, AWS, Struts2, LDAP, JSP) \\
+Built a remote consultation platform for a Japanese spa chain, enabling doctors to advise customers on skin care.
+
+\href{https://tpssoft.com/}{\bf TPS} \hfill {\em Jun 2020 -- Dec 2020} \\
+\textit{Software Engineer} (Java, Spring Boot, Doma, PostgreSQL, Flyway) \\
+Built physical asset management software for Toshiba to track and manage company equipment and assets.
+
+{\bf Software Engineering Intern} -- \href{https://fptsoftware.com/}{FPT Software} (Jun -- Aug 2018), \href{https://www.hitachivantara.com/go/ve/home/}{Hitachi Vantara Vietnam} (Feb -- Nov 2019)
+
+\end{rSection}
+
+\begin{rSection}{Certificate}
+\begin{itemize}
+    \item \href{https://www.credly.com/badges/f28440e9-17d0-4ce7-9bed-f470b18ecdb0/public_url}{AWS Cloud Practitioner}, \href{https://www.credly.com/badges/43f21751-5e44-489f-801f-82ae1828bd55/public_url}{AWS AI Practitioner}
+    \item \href{https://drive.google.com/drive/folders/19Kph3-xM5VB-MjKf3lTdFb30IIcpy9yU?usp=sharing}{Temenos Transact R25 -- Core Banking}
+    \item TOEIC SR (825/990): expired Sep 2025
+    \item Agile-Scrum Training Certificate -- issued by \href{https://www.axonactive.com}{Axon Active}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Projects}
+\begin{itemize}
+    \item \textbf{miniSQL} | Java, Spring Boot \hfill {\em 2026} --- SQL database from scratch: B+tree storage engine, SQL parser/planner, web console.
+    \item \textbf{miniKafka} / \textbf{miniRedis} | Java \hfill {\em 2025} --- Kafka broker core (partitioned log, consumer groups) and in-memory KV store (TTL, AOF, snapshots) built from scratch.
+    \item \textbf{Kindi} | .NET, Angular, PostgreSQL \hfill {\em Present} --- SME commerce platform.
+\end{itemize}
+\end{rSection}
+
+\end{document}
